@@ -15,13 +15,15 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Project providess</a></li>
-          <li><a href="#contact">Contact me please</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#photos">Photos</a></li>
+          <li><a href="#contact">Contact </a></li>
+          
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Raghav Garg</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -32,6 +34,7 @@
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#photos" onclick="toggleMenu()">Photos</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -42,12 +45,12 @@
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <h1 class="title">Raghav Garg </h1>
+        <p class="section__text__p2">AI engineer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/Resume_2026.pdf')"
           >
             Download CV
           </button>
@@ -60,13 +63,13 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://linkedin.com/'"
+            onclick="location.href='https://www.linkedin.com/in/raghav-garg-1b8bb0249/'"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/'"
+            onclick="location.href='https://github.com/Raghavgarg5541275'"
           />
         </div>
       </div>
@@ -82,6 +85,7 @@
             class="about-pic"
           />
         </div>
+        
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
@@ -91,7 +95,7 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <p>0 - 1 years <br />Software Developmer Engineer<br /> AI Engineer</p>
             </div>
             <div class="details-container">
               <img
@@ -100,17 +104,16 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              <p>Bachelors of Technology in Computer Science <br /> Artificial Intelligence Specialisation</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+              Ambitious and focused candidate with expertise in Data Structures and Algorithms (DSA) and AI-driven solutions.
+Skilled in designing and implementing software applications using Python, C/C++, React.js, and MongoDB, with a
+strong focus on machine learning and AI technologies. Known for solving complex problems, optimizing systems, and
+delivering high-quality results in dynamic environments. Passionate about combining software development and AI to
+create innovative solutions for real-world challenges.
             </p>
           </div>
         </div>
@@ -122,13 +125,43 @@
         onclick="location.href='./#experience'"
       />
     </section>
+    <section id="photos" class="horizontal-scroll">
+      <h2 class="title">Photographs</h2>
+      <div class="photo-container">
+        <img src="./assets/photo1.jpg" alt="Photo 1" class="photo-item" onclick="openPhotoModal(0)" />
+        <img src="./assets/photo2.jpg" alt="Photo 2" class="photo-item" onclick="openPhotoModal(1)" />
+        <img src="./assets/photo3.jpg" alt="Photo 3" class="photo-item" onclick="openPhotoModal(2)" />
+        <img src="./assets/photo4.jpg" alt="Photo 4" class="photo-item" onclick="openPhotoModal(3)" />
+        <img src="./assets/photo5.jpg" alt="Photo 5" class="photo-item" onclick="openPhotoModal(4)" />
+        <img src="./assets/photo6.jpg" alt="Photo 6" class="photo-item" onclick="openPhotoModal(5)" />
+        <img src="./assets/photo7.jpg" alt="Photo 7" class="photo-item" onclick="openPhotoModal(6)" />
+        <img src="./assets/photo8.jpg" alt="Photo 8" class="photo-item" onclick="openPhotoModal(7)" />
+        <img src="./assets/photo9.jpg" alt="Photo 9" class="photo-item" onclick="openPhotoModal(8)" />
+        <img src="./assets/photo10.jpg" alt="Photo 10" class="photo-item" onclick="openPhotoModal(9)" />
+        <img src="./assets/photo11.jpg" alt="Photo 11" class="photo-item" onclick="openPhotoModal(10)" />
+        <img src="./assets/photo12.jpg" alt="Photo 12" class="photo-item" onclick="openPhotoModal(11)" />
+        <img src="./assets/photo13.jpg" alt="Photo 13" class="photo-item" onclick="openPhotoModal(12)" />
+        <img src="./assets/photo14.jpg" alt="Photo 14" class="photo-item" onclick="openPhotoModal(13)" />
+        <img src="./assets/photo15.jpg" alt="Photo 15" class="photo-item" onclick="openPhotoModal(14)" />
+        <img src="./assets/photo16.jpg" alt="Photo 16" class="photo-item" onclick="openPhotoModal(15)" />
+        <img src="./assets/photo17.jpg" alt="Photo 17" class="photo-item" onclick="openPhotoModal(16)" />
+      </div>
+    </section>
+    <div id="photoModal" class="modal" onclick="closePhotoModal()">
+      <span class="close" onclick="closePhotoModal()">&times;</span>
+      <img id="modalPhoto" class="modal-content" />
+      <div class="modal-navigation">
+        <button class="prev" onclick="prevPhoto(event)">&#10094;</button>
+        <button class="next" onclick="nextPhoto(event)">&#10095;</button>
+      </div>
+    </div>
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Languages</h2>
             <div class="article-container">
               <article>
                 <img
@@ -137,7 +170,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>HTML</h3>
+                  <h3>C++</h3>
                   <p>Experienced</p>
                 </div>
               </article>
@@ -148,7 +181,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>CSS</h3>
+                  <h3>Python</h3>
                   <p>Experienced</p>
                 </div>
               </article>
@@ -159,7 +192,46 @@
                   class="icon"
                 />
                 <div>
-                  <h3>SASS</h3>
+                  <h3> SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML/CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Javascript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frameworks</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tensorflow</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -170,8 +242,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
+                  <h3>Scikit-learn</h3>
+                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
@@ -181,8 +253,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
+                  <h3>Flask</h3>
+                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
@@ -192,14 +264,14 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Material UI</h3>
+                  <h3>MERN Stack</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Technical Skills</h2>
             <div class="article-container">
               <article>
                 <img
@@ -208,18 +280,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
+                  <h3>Data Structures and Algorithms</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -230,7 +291,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Express JS</h3>
+                  <h3>Cloud (AWS, IBM Cloud)</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -241,12 +302,24 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Git</h3>
+                  <h3>Machine Learning</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Deep Learning</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
             </div>
           </div>
+          
         </div>
       </div>
       <img
@@ -352,7 +425,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p><a href="mailto:examplemail@gmail.com">raghavgarg.ynr@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -360,8 +433,33 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/raghav-garg-1b8bb0249/">LinkedIn</a></p>
+
+
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon contact-icon"
+          />
+          <p><a href="https://github.com/Raghavgarg5541275">GitHub</a></p>
         </div>
+      </div>
+    
+      <!-- Google Form Section -->
+      <div class="contact-form-container">
+        <h2>Contact Form</h2>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdO-DM6yrxNITgiCmaClQga35axJ0KKHt5gVy3KVSe7H3K_SQ/viewform?usp=sf_link"
+          width="100%"
+          height="300"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          style="border: none;"
+          title="Contact Form"
+        >
+          Loading…
+        </iframe>
       </div>
     </section>
     <footer>
@@ -371,6 +469,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#photos">Photos</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -380,3 +479,4 @@
     <script src="script.js"></script>
   </body>
 </html>
+    

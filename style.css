@@ -27,6 +27,148 @@ a,
 }
 
 /* DESKTOP NAV */
+/* Navbar Section */
+.nav-links li {
+  list-style: none;
+  display: inline-block;
+}
+
+.nav-links li a {
+  padding: 1rem;
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.nav-links li a:hover {
+  color: grey;
+}
+
+/* Photos Section */
+/* Photos Section */
+#photos {
+  padding: 1rem 0; /* Reduced padding for the entire section */
+}
+
+.photo-container {
+  display: flex;
+  gap: 0.1rem; /* Reduced gap between images */
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 0.1-rem 0; /* Reduced padding */
+}
+
+.photo-item {
+  border-radius: 1rem;
+  flex-shrink: 0;
+  width: 250px; /* Reduced image width */
+  height: 150px; /* Reduced image height */
+  object-fit: cover;
+  border: 2px solid rgb(163, 163, 163);
+  transition: transform 300ms ease;
+}
+
+.photo-item:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* Fullscreen Modal for Photos */
+.photo-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-modal.open {
+  display: flex;
+}
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 80vh;
+  margin: auto;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.prev, .next {
+  font-size: 24px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  transition: transform 300ms ease;
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close-modal:hover {
+  color: red;
+  transform: scale(1.2);
+}
+
+/* Title Styling */
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
 
 nav,
 .nav-links {
@@ -419,6 +561,49 @@ article .icon {
 .email-icon {
   height: 2.5rem;
 }
+
+/* CONTACT FORM */
+.contact-form-container {
+  margin: 1rem auto;  /* keep top and bottom margin as it is */
+  padding: 0.5rem;    /* reduced padding */
+  max-width: 1000px;  /* maximum width */
+  background-color: #f2f2f2;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-left: 2rem;  /* Increased left margin */
+  margin-right: 2rem; /* Increased right margin */
+}
+
+.contact-form-container h2 {
+  font-size: 1.25rem;  /* slightly smaller header */
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* Google Form Adjustments */
+.contact-form-container iframe {
+  width: 100%;       /* make it take full width */
+  height: 300px;     /* reduced height for horizontal form */
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styling for responsive behavior */
+@media (max-width: 768px) {
+  .contact-form-container {
+    max-width: 100%;
+    padding: 0.25rem;
+    margin-left: 1rem;  /* reduce left margin for smaller screens */
+    margin-right: 1rem; /* reduce right margin for smaller screens */
+  }
+
+  .contact-form-container iframe {
+    height: 400px;  /* adjust for smaller screens */
+  }
+}
+
 
 /* FOOTER SECTION */
 
